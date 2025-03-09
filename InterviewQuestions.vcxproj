@@ -146,6 +146,8 @@
     <ClCompile Include="Algorithms3-count_group_of_4_passengers_in_the_plane_line.cpp" />
     <ClCompile Include="Algorithms3-csv_row_max_value.cpp" />
     <ClCompile Include="Bits-count_different_bits.cpp" />
+    <ClCompile Include="Bits-turn_bit_5_to_0.cpp" />
+    <ClCompile Include="Bits-turn_bit_5_to_1.cpp" />
     <ClCompile Include="DataStructure-LinkedList_get_intersection_node.cpp" />
     <ClCompile Include="DataStructures-LinkedList_add_two_numbers.cpp" />
     <ClCompile Include="DataStructures-LinkedList_favorite_list.cpp" />
@@ -159,6 +161,7 @@
     <ClCompile Include="DataStructures-Stack_copy_stack_with_queue.cpp" />
     <ClCompile Include="DataStructures-Stack_reverse_stack_with_stack.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sorting-merge_sort1.cpp" />
     <ClCompile Include="Threads-semiphore.cpp" />
   </ItemGroup>
   <ItemGroup>
