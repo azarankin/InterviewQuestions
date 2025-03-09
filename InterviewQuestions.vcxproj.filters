@@ -108,6 +108,9 @@
     <ClCompile Include="DataStructures-LinkedList_favorite_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms3-smallest_integer_from_array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

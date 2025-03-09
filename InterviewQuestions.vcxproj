@@ -132,6 +132,7 @@
     <ClCompile Include="Algorithms1-find_the_missing_number.cpp" />
     <ClCompile Include="Algorithms1-length_of_longest_substring_order_n.cpp" />
     <ClCompile Include="Algorithms1-sort_3_balls.cpp" />
+    <ClCompile Include="Algorithms3-smallest_integer_from_array.cpp" />
     <ClCompile Include="Algorithms4-custom_string.cpp" />
     <ClCompile Include="Algorithms4-count_compared_same_characters.cpp" />
     <ClCompile Include="Algorithms1-is_perfect_square.cpp" />

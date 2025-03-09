@@ -1,28 +1,25 @@
 ﻿
 #include"pch"
 
+
+
+
+
 void printArraySubsets(const vector<char>& arr) {
     int n = arr.size();
     int totalSubsets = pow(2, n);
 
-    //for (int i = 1; i < totalSubsets; i++) {
-    //    string subset = "";
-    //    for (int j = 0; j < n; j++) {
-    //        if (i & (1 << j)) { 
-    //            subset += arr[j];
-    //        }
-    //    }
-    //    cout << subset << endl;
-    //}
-
-    for (int i = 1; i < totalSubsets; i++) {
-        string subset = "";
-        int num = i;
-        for (int j = 0; num > 0; j++, num /= 2) { // Extract subset without bitwise shift
-            if (num % 2 == 1) subset += arr[j]; // Check if current bit is set
-        }
-        cout << subset << endl;
+    for (int subvariant = 1; subvariant < totalSubsets; subvariant++) {
+       string subset = "";
+       for (int variant = 0; variant < n; variant++) {
+           if (subvariant & (1 << variant)) { 
+               subset += arr[variant];
+           }
+       }
+       cout << subset << endl;
     }
+    //subvariant            00001  00010   00011   00100   00101   00110
+    // (1 << variant)       00000  00001   00010   00100   01000   10000
 }
 
 
