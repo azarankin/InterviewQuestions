@@ -128,6 +128,47 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="03-algorithms-reverse_array.cpp" />
+    <ClCompile Include="02-search-binary_search.cpp" />
+    <ClCompile Include="05-algoritgm_maximum_sub_array_sum.cpp" />
+    <ClCompile Include="Algorithm\Algorithms0-array.c" />
+    <ClCompile Include="Algorithm\Algorithms0-array_turn_left_n_times.c" />
+    <ClCompile Include="Algorithm\Algorithms0-swap.c" />
+    <ClCompile Include="Algorithm\Algorithms1-clean_array_o1.cpp" />
+    <ClCompile Include="Algorithm\Algorithms1-find_the_missing_number.cpp" />
+    <ClCompile Include="Algorithm\Algorithms1-is_perfect_square.cpp" />
+    <ClCompile Include="Algorithm\Algorithms1-length_of_longest_substring_order_n.cpp" />
+    <ClCompile Include="Algorithm\Algorithms1-sort_3_balls.cpp" />
+    <ClCompile Include="Algorithm\Algorithms2-except_self_multiplication.cpp" />
+    <ClCompile Include="Algorithm\Algorithms2-is_sum.cpp" />
+    <ClCompile Include="Algorithm\Algorithms3-count_duplicated_hospitals_per_doctor.cpp" />
+    <ClCompile Include="Algorithm\Algorithms3-count_group_of_4_passengers_in_the_plane_line.cpp" />
+    <ClCompile Include="Algorithm\Algorithms3-csv_row_max_value.cpp" />
+    <ClCompile Include="Algorithm\Algorithms3-smallest_integer_from_array.cpp" />
+    <ClCompile Include="Algorithm\Algorithms4-count_compared_same_characters.cpp" />
+    <ClCompile Include="Algorithm\Algorithms4-custom_string.cpp" />
+    <ClCompile Include="Algorithm\Algorithms4-print_array_sub_sets.cpp" />
+    <ClCompile Include="Bits\Bits-count_different_bits.cpp" />
+    <ClCompile Include="Bits\Bits-turn_bit_5_to_0.cpp" />
+    <ClCompile Include="Bits\Bits-turn_bit_5_to_1.cpp" />
+    <ClCompile Include="Datastructure\DataStructure-LinkedList_get_intersection_node.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_add_two_numbers.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_favorite_list.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_has_cycle.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_ordered.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_reverse.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-LinkedList_with_tail_and_length.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-Queque_copy_queue_with_stack.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-Queque_with_array.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-Queque_with_linkedlist.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-Stack_copy_stack_with_queue.cpp" />
+    <ClCompile Include="Datastructure\DataStructures-Stack_reverse_stack_with_stack.cpp" />
+    <ClCompile Include="01-search-linear_search.cpp" />
+    <ClCompile Include="04-algorithms-print_pairs.cpp" />
+    <ClCompile Include="Sorting\Sorting-bubble_sort.cpp" />
+    <ClCompile Include="Sorting\Sorting-merge_sort.cpp" />
+    <ClCompile Include="Sorting\Sorting-merge_sort1.cpp" />
+    <ClCompile Include="Sorting\Sorting-merge_sort2.cpp" />
     <ClCompile Include="Threads-semiphore.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
