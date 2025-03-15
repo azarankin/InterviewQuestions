@@ -120,6 +120,15 @@
     <ClCompile Include="Sorting-merge_sort1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sorting-bubble_sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting-merge_sort2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting-merge_sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

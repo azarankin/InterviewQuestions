@@ -161,6 +161,9 @@
     <ClCompile Include="DataStructures-Stack_copy_stack_with_queue.cpp" />
     <ClCompile Include="DataStructures-Stack_reverse_stack_with_stack.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sorting-bubble_sort.cpp" />
+    <ClCompile Include="Sorting-merge_sort.cpp" />
+    <ClCompile Include="Sorting-merge_sort2.cpp" />
     <ClCompile Include="Sorting-merge_sort1.cpp" />
     <ClCompile Include="Threads-semiphore.cpp" />
   </ItemGroup>
