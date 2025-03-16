@@ -138,7 +138,19 @@
     <ClCompile Include="04-algorithms-print_pairs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="05-algoritgm_maximum_sub_array_sum.cpp">
+    <ClCompile Include="05-algorithms_maximum_sub_array_sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="06-algorithms-vectors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="07-algorithms-lower_bound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="08-algorithms-closest_sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="09-algorithms-krotate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

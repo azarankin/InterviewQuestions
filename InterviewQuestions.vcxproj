@@ -130,7 +130,11 @@
   <ItemGroup>
     <ClCompile Include="03-algorithms-reverse_array.cpp" />
     <ClCompile Include="02-search-binary_search.cpp" />
-    <ClCompile Include="05-algoritgm_maximum_sub_array_sum.cpp" />
+    <ClCompile Include="05-algorithms_maximum_sub_array_sum.cpp" />
+    <ClCompile Include="06-algorithms-vectors.cpp" />
+    <ClCompile Include="07-algorithms-lower_bound.cpp" />
+    <ClCompile Include="08-algorithms-closest_sum.cpp" />
+    <ClCompile Include="09-algorithms-krotate.cpp" />
     <ClCompile Include="Algorithm\Algorithms0-array.c" />
     <ClCompile Include="Algorithm\Algorithms0-array_turn_left_n_times.c" />
     <ClCompile Include="Algorithm\Algorithms0-swap.c" />
