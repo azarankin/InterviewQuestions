@@ -14,15 +14,15 @@ bool hasCycle(Node* head)
 {
     if (!head || !head->next) return false;
 
-    Node* slow = head;
-    Node* fast = head;
+    Node* p_slow = head;
+    Node* p_fast = head;
 
-    while (fast && fast->next) 
+    while (p_fast && p_fast->next) 
     {
-        slow = slow->next;       // Tortoise moves one step
-        fast = fast->next->next; // Hare moves two steps
+        p_slow = p_slow->next;       // Tortoise moves one step
+        p_fast = p_fast->next->next; // Hare moves two steps
 
-        if (slow == fast) return true; // If they meet, there is a cycle
+        if (p_slow == p_fast) return true; // If they meet, there is a cycle
     }
 
     return false; // If we reach the end of the list, there is no cycle

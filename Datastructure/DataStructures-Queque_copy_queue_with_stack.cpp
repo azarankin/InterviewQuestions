@@ -16,7 +16,8 @@ queue<int> copyQueueUsingStack(queue<int> originalQueue) {
 
     // Step 2: Transfer elements back from stack to new queue
     queue<int> copiedQueue;
-    while (!tempStack.empty()) {
+    while (!tempStack.empty()) 
+    {
         copiedQueue.push(tempStack.top());
         tempStack.pop();
     }

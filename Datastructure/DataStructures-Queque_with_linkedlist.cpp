@@ -15,7 +15,7 @@ namespace{
         Queue() 
         {
             front = nullptr;
-            rear = nullptr;
+            rear = nullptr;//less important
         }
 
         // Check if the queue is empty
@@ -46,14 +46,14 @@ namespace{
                 std::cout << "Queue is empty!\n";
                 return -1;
             }
-            Node* prv_front = front;
-            int value = prv_front->data;
+            Node* temp = front;
+            int value = front->data;
             front = front->next;
-            if (!front/* == nullptr*/)
+            if (!front)
             {
                 rear = nullptr;
             }
-            delete prv_front;
+            delete temp;
 
             return value;
         }

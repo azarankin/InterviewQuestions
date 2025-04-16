@@ -5,36 +5,38 @@ struct Node {
     Node(int _val) : val(_val), next(nullptr), random(nullptr) {}
 };
 
-Node* copyRandomList(Node* head) {
-    if (!head) return nullptr;
+Node* copyRandomList(Node* p_head) {
+    if (!p_head) return nullptr;
 
     // 1. שיבוץ עותקים בין צמתים קיימים
-    Node* curr = head;
-    while (curr) {
-        Node* copy = new Node(curr->val);
-        copy->next = curr->next;
-        curr->next = copy;
-        curr = copy->next;
+    Node* p_curr = p_head;
+    while (p_curr) {
+        Node* copy = new Node(p_curr->val);
+        //copy->value = curr->val;
+        //copy->random = nullptr;
+        copy->next = p_curr->next;
+        p_curr->next = copy;
+        p_curr = copy->next;
     }
     // ה random pointers שגויים
 
     // 2. קביעת random pointers
-    curr = head;
-    while (curr) {
-        if (curr->random)
-            curr->next->random = curr->random->next;
-        curr = curr->next->next;
+    p_curr = p_head;
+    while (p_curr) {
+        if (p_curr->random)
+            p_curr->next->random = p_curr->random->next;
+        p_curr = p_curr->next->next;
     }
 
     // 3. הפרדת הרשימות
-    curr = head;
-    Node* new_head = head->next;
-    while (curr) {
-        Node* copy = curr->next;
-        curr->next = copy->next;
+    p_curr = p_head;
+    Node* new_head = p_head->next;
+    while (p_curr) {
+        Node* copy = p_curr->next;
+        p_curr->next = copy->next;
         if (copy->next)
             copy->next = copy->next->next;
-        curr = curr->next;
+        p_curr = p_curr->next;
     }
 
     return new_head;

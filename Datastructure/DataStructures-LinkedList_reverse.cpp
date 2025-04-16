@@ -8,17 +8,17 @@ namespace {
     };
 }
 Node* reverseList(Node* head) {
-    Node* prev = nullptr;
-    Node* current = head;
+    Node* p_prev = nullptr;
+    Node* p_current = head;
 
     // Traverse the list and adjust pointers one by one
-    while (current/* != nullptr*/) {
-        Node* nextNode = current->next; // store next
-        current->next = prev;               // reverse pointer
-        prev = current;                     // move prev forward
-        current = nextNode;                 // move current forward
+    while (p_current/* != nullptr*/) {
+        Node* nextNode = p_current->next; // store next
+        p_current->next = p_prev;               // reverse pointer
+        p_prev = p_current;                     // move prev forward
+        p_current = nextNode;                 // move current forward
     }
 
     // 'prev' will point to the new head of the reversed list
-    return prev;
+    return p_prev;
 }

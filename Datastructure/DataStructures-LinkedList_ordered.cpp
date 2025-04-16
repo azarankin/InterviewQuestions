@@ -26,41 +26,27 @@ namespace {
         {
             Node* newNode = new Node(val);
 
-            // Case 1: Insert at the beginning (empty list or new value is the smallest)
-            if (!head/* == nullptr*/)
-            {
-                //newNode->next = nullptr;
-                head = newNode;
-                return;
-            }
+            // if (!head)
+            // {
+            //     //newNode->next=nullptr;
+            //     head = newNode;
+            //     return;
+            // }
 
-            if (head->val >= val) {
+            if (!head || head->val >= val) {
                 newNode->next = head;
                 head = newNode;
                 return;
             }
 
-            // Case 2: Traverse the list to find the correct position
-            Node* current = head;
-            while (current->next /* != nullptr*/ && current->next->val < val)
+            Node* p_current = head;
+            while (p_current->next && p_current->next->val < val)
             {
-                current = current->next;
+                p_current = p_current->next;
             }
             // Insert the new node
-            newNode->next = current->next;
-            current->next = newNode;
-
-            /*
-            Node* newNode = new Node(val);
-            if (head == nullptr)
-            {
-                head = newNode;
-                return;
-            }
-
-            Node* tail = get_tail();
-            tail->next = newNode;
-            */
+            newNode->next = p_current->next;
+            p_current->next = newNode;
         }
 
         void print() const
