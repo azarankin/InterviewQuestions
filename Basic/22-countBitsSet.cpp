@@ -1,8 +1,12 @@
-int countBitsSet(uint32_t n) {
+int countBitsSet(uint32_t r) {
     int count = 0;
-    while (n) {
-        count += n & 1;
-        n >>= 1;
+    while (r) {
+        uint32_t rightbit = r & 1;
+        r >>= 1;
+
+        //if(0b1 == rightbit) ++count;
+        count += rightbit;
+        
     }
     return count;
 }

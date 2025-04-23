@@ -26,7 +26,7 @@ Node* reverseList(Node* head) {
 
 Node* reverseRecursive(Node* head) {
     // בסיס הרקורסיה: רשימה ריקה או עם איבר אחד
-    if (head == nullptr || head->next == nullptr) {
+    if (!head || !head->next) {
         return head;
     }
 

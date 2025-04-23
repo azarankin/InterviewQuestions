@@ -6,9 +6,9 @@ struct Node {
 
 void deleteNode(Node* node) {
     if (!node || !node->next) return; // אי אפשר למחוק את האחרון
-
+     
+    node->val = node->next->val;
     Node* temp = node->next;
-    node->val = temp->val;
     node->next = temp->next;
     delete temp;
 }
