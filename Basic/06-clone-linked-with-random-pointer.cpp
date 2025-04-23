@@ -30,13 +30,18 @@ Node* copyRandomList(Node* p_head) {
 
     // 3. הפרדת הרשימות
     p_curr = p_head;
-    Node* new_head = p_head->next;
+    Node* copy = p_head->next;
+    Node* new_head = copy;
+    
     while (p_curr) {
-        Node* copy = p_curr->next;
-        p_curr->next = copy->next;
+        
         if (copy->next)
             copy->next = copy->next->next;
+
+        p_curr->next = p_curr->next->next;
+
         p_curr = p_curr->next;
+        copy = copy->next;
     }
 
     return new_head;
