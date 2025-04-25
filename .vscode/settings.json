@@ -70,6 +70,10 @@
         "xutility": "cpp",
         "list": "cpp",
         "unordered_map": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "algorithms5-cpp": "cpp",
+        "algorithms5-n_squared-with-add-shift-operatorscpp": "cpp",
+        "unordered_set": "cpp",
+        "numeric": "cpp"
     }
 }

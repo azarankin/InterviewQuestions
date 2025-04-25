@@ -5,8 +5,8 @@ struct Node {
 };
 
 Node* addTwoNumbers(Node* l1, Node* l2) {
-    Node* newHead = new Node(-1);
-    Node* curr = newHead;
+    Node* result = new Node(-1);
+    Node* curr_result = result;
     int carry = 0;
 
     while (l1 || l2 || carry) {
@@ -22,14 +22,15 @@ Node* addTwoNumbers(Node* l1, Node* l2) {
             l2 = l2->next;
         }
 
+        
+        curr_result->next = new Node(sum % 10);
         carry = sum / 10;
-        int new_val = sum % 10;
-        curr->next = new Node(new_val);
-        curr = curr->next;
+
+        curr_result = curr_result->next;
     }
 
-    Node*temp=newHead->next;
-    delete newHead;
+    Node*temp=result->next;
+    delete result;
     return temp;
 }
 
@@ -44,8 +45,9 @@ Node* addTwoNumbersRec(Node* l1, Node* l2, int carry = 0) {
 
     Node* result = new Node(sum % 10);
 
-    l1 = l1 ? l1->next : nullptr;
-    l2 = l2 ? l2->next : nullptr;
+    if(l1) l1->next;
+    if(l2) l2->next;
+
     result->next = addTwoNumbersRec(l1, l2, sum / 10);
 
     return result;
