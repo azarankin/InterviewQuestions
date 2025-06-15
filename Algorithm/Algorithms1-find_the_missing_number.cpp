@@ -11,19 +11,7 @@ int findMissingNumber(const vector<int>& numbers, int n) {
         actualSum += num;
     }
 
-    std::vector<int> numbers_sorted = numbers;
 
-    //std::sort(std::begin(numbers_sorted), std::end(numbers_sorted));
-    //for(int i = 1; i < numbers_sorted.size();++i)
-    //{
-    //    if (numbers_sorted[i - 1] + 1 != numbers_sorted[i])
-    //    {
-    //        return numbers_sorted[i - 1] + 1;
-    //    }
-    //}
-    //return numbers_sorted.size();
-
-    // The missing number is the difference
     return expectedSum - actualSum;
 }
 

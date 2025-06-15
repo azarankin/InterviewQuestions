@@ -8,7 +8,7 @@ using namespace std;
 // 2	n/4
 // n	n/2^n	=> O(log2(n))
 //O(log(n))
-int binary_search(int arr[], int n, int key) {
+int binary_search(const int arr[], int n, int key) {
 	//Implement binary search
 	int s = 0;//start
 	int e = n - 1;//end

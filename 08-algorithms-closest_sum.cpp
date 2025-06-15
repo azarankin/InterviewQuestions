@@ -17,7 +17,7 @@ pair<int, int> closestSum(vector<int> arr, int x) {
         //int mid = (s+e) /2;
         int sum = arr[s] + arr[e];
         int currentDiff = abs(x - sum);
-
+        //diff = std::min(currentDiff, diff);
         if (currentDiff < diff) {
             diff = currentDiff;
             closesum = { arr[s], arr[e] };

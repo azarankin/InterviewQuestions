@@ -1,7 +1,9 @@
+//Demo with factory pattern
+#include <iostream>
 class Singleton {
     private:
         Singleton() {} // בנאי פרטי
-        static Singleton* instance;
+        inline static Singleton* instance = nullptr;
     
     public:
         static Singleton* getInstance() {
@@ -11,7 +13,7 @@ class Singleton {
         }
     };
     
-    Singleton* Singleton::instance = nullptr;
+    //Singleton* Singleton::instance = nullptr;
     
 
 

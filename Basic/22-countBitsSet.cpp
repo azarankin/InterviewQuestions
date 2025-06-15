@@ -1,3 +1,6 @@
+
+#include <cstdint>
+
 int countBitsSet(uint32_t r) {
     int count = 0;
     while (r) {

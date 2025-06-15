@@ -79,13 +79,13 @@ void stringSwop(char str[]) {
 }
 
 
-//	Merge 2 arrays
-void mergeArray(int merge[], int arr1[], int length1, int arr2[], int length2) {
-    for (int i = 0; i < length1; i++)
-        merge[i] = arr1[i];
-    for (int i = 0; i < length2; i++)
-        merge[length1 + i] = arr2[i]; /*continue merge array after [length1-1]*/
-}
+// //	Merge 2 arrays
+// void mergeArray(int merge[], int arr1[], int length1, int arr2[], int length2) {
+//     for (int i = 0; i < length1; i++)
+//         merge[i] = arr1[i];
+//     for (int i = 0; i < length2; i++)
+//         merge[length1 + i] = arr2[i]; /*continue merge array after [length1-1]*/
+// }
 
 
 //	Merge 2 arrays with sorting

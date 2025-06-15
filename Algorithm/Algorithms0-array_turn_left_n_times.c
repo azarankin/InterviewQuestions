@@ -10,7 +10,7 @@ void turnLeft(int arr[], int arrLength) {
     for (i = 0; i < arrLength - 1; i++) {
         arr[i] = arr[i + 1];
     }
-
+    int arr[32];
     arr[arrLength - 1] = first;
 }
 

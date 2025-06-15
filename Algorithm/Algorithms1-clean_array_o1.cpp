@@ -7,7 +7,7 @@ class FastClearArray {
 private:
     std::vector<int> arr;
     std::vector<int> versions;
-    int version = 0;
+    int crurrent_version = 0;
 
 public:
     FastClearArray(int size) 
@@ -19,19 +19,19 @@ public:
     void set(int index, int value) 
     {
         arr[index] = value;
-        versions[index] = version; // Mark this index as valid in the current version
+        versions[index] = crurrent_version; // Mark this index as valid in the current version
     }
 
     int get(int index) 
     {
-        if (versions[index] == version)
+        if (versions[index] == crurrent_version)
             return arr[index];
         return 0; // Treat it as "cleared"
     }
 
     void clear() 
     {
-        ++version; // "Clears" the array logically in O(1)
+        ++crurrent_version; // "Clears" the array logically in O(1)
     }
 };
 
@@ -49,41 +49,3 @@ int main_FastClearArray() {
     return 0;
 }
 
-
-// //wrong way
-//class FastClearArray1 {
-//private:
-//    std::vector<int> arr;
-//    std::vector<int> repair_arr;
-//    bool are_array_repeaired{ false };
-//public:
-//
-//    FastClearArray1(int size) {
-//        arr.resize(size, 0);
-//        repair_arr.resize(size, 0);
-//    }
-//    int get(int index)
-//    {
-//        if (are_array_repeaired)
-//            return repair_arr[index];
-//        return arr[index];
-//    }
-//
-//
-//    void set(int index, int value)
-//    {
-//        if (are_array_repeaired)
-//        {
-//            //repair_arr[index] = value;
-//            arr.clear();
-//        }
-//        arr[index] = value;
-//        are_array_repeaired = false;
-//    }
-//
-//    void clear()
-//    {
-//        are_array_repeaired = true;
-//    }
-//
-//};

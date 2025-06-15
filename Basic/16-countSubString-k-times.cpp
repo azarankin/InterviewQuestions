@@ -1,3 +1,8 @@
+#include <unordered_map>
+#include <string>
+#include <algorithm>
+
+
 std::unordered_map<std::string, int> countSubstringsK(const std::string& s, int k) {
     std::unordered_map<std::string, int> freq;
     if (k > s.size()) return freq;

@@ -16,11 +16,12 @@ Node* reverseList(Node* head) {
         Node* nextNode = p_current->next; // store next
         p_current->next = p_prev;               // reverse pointer
         p_prev = p_current;                     // move prev forward
+        //if(nextNode)
         p_current = nextNode;                 // move current forward
     }
 
     // 'prev' will point to the new head of the reversed list
-    return p_prev;
+    return p_prev; //p_current
 }
 
 

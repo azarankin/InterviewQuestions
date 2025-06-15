@@ -1,3 +1,5 @@
+#include <cstdint>
+
 uint32_t reverseBits(uint32_t r) {
     uint32_t result = 0;
 

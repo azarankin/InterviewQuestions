@@ -2,19 +2,18 @@
 #include <string>
 
 bool isValidBrackets(const std::string& s) {
-    std::stack<char> stk;
+    std::stack<char> 
+    ;
     for (char c : s) {
         if (c == '(' || c == '[' || c == '{') {
             stk.push(c);
         } else if (c == ')' || c == ']' || c == '}') {
-            if (stk.empty()) return false;
+            char reversed = c == ')' ? '(' : ']' ? '[' : '{';
 
             char top = stk.top();
             stk.pop();
 
-            if ((c == ')' && top != '(') ||
-                (c == ']' && top != '[') ||
-                (c == '}' && top != '{')) {
+            if (top != reversed) {
                 return false;
             }
         }

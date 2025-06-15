@@ -3,9 +3,9 @@
 #include <cmath>
 
 float calculate_angle(int hour, int minute) {
-    if (hour < 0 || hour > 24 || minute < 0 || minute >= 60) {
+    if (hour < 0 || hour > 24 || minute < 0 || minute >= 59) {
         printf("שעה או דקות לא חוקיים\n");
-        return -1;
+        return -1.0f;
     }
 
     // הפוך שעה לפורמט 12

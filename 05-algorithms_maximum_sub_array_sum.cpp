@@ -4,14 +4,14 @@ using namespace std;
 int maximum_subarray_sum(int arr[], int n) {
 
 	int currentsum = 0;	//current sum
-	int largestSum = 0; //largest sum
+	int maxSum = 0; //largest sum
 
 	for (int i = 0;i < n;i++) {
 		currentsum = max(arr[i], currentsum + arr[i]);
-		largestSum = max(largestSum, currentsum);
+		maxSum = max(maxSum, currentsum);
 	}
 
-	return largestSum;
+	return maxSum;
 } 
 
 
